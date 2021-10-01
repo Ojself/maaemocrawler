@@ -1,7 +1,7 @@
 # Maaemocrawler
 
 ## Motivation
-The reservations at this restaurant seemed to be taken the same day they are released, which is once a month or so.
+The reservations at this restaurant seemed to be taken the same day as they are released, which is once a month or so.
 Although not an avid fancy restaurant goer, I wanted to automate the process of getting a table (or at least be notified if it exists)
 
 ## Tech
