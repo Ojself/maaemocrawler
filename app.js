@@ -12,7 +12,7 @@ const getAvailableDates = async () => {
         const response = await axios(config)
         return response.data
     }   catch (error) {
-        console.log("Failed to fetch Maeemo calendar ", error);
+        console.log("Failed to fetch Maaemo calendar ", error);
     }
 }
 
@@ -20,7 +20,7 @@ const crawlService = async () => {
     const { data } = await getAvailableDates()
     if (data.some(date => date.available)) {
         const availableDates = data.filter(d=>d.available).map((d,i)=> (i !==0 ? " " : "") + d.date)
-        prowl.push(`There's available dates at Maeemo - December:\n ${availableDates}`, 'Maeemo crawler', ( err )=>{
+        prowl.push(`There's available dates at Maaemo - December:\n ${availableDates}`, 'Maaemo crawler', ( err )=>{
             if ( err ) throw err;
         });
     }
