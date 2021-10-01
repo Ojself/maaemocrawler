@@ -27,7 +27,7 @@ const crawlService = async () => {
 }
 
 //Runs every 30 seconds
-const cronJob = new CronJob('*/5 * * * * *', (() => {
+const cronJob = new CronJob('*/30 * * * * *', (() => {
     crawlService()
   }), null, true, timeZone);
 
